@@ -80,7 +80,12 @@ p {
 }
 
 .b-game-card {
-  background-color:#282c34;
+  background: rgba(111, 111, 111, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.3);
   perspective: 100rem;
 }
 
@@ -116,7 +121,7 @@ p {
 }
 .b-game-card.clicked .b-game-card__cover {
   transition: transform 1.2s ease-in-out;
-  transform: rotateX(80deg) translateY(-6px);
+  transform: rotateX(87deg) translateY(-6px);
   cursor: pointer;
 }
 .b-game-card:hover .b-game-card__cover::after {
@@ -128,8 +133,6 @@ p {
   transform: rotateX(7deg) translateY(-6px) scale(1.05);
 }
 
-
-
 .shake {
   animation: shake 0.5s ease-in-out;
 }
@@ -138,9 +141,6 @@ p {
 .b-game-card.shake {
   animation: shake 0.5s ease-in-out;
 }
-
-
-
 
 .progress-3 {
   width:10rem;

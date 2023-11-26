@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import "highlight.js/styles/atom-one-dark.css";
+import "highlight.js/styles/shades-of-purple.css";
 import './index.css'
 import '@vtmn/css/dist/index.css'; // Import VTMN CSS styles
 import '@fontsource/roboto'; // Defaults to weight 400
