@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes loading {
+  100% {background-size:100%}
+}
+
+
+.ribbon{
+  position:relative;
+}
+.text{
+  display:inline-block;
+  padding:1rem 1.5rem;
+  line-height:1.2em;
+  background: #e91e34;
+  position:relative;
+}
+.ribbon:after,.ribbon:before,
+.text:before,.text:after,
+.bold:before{
+  content:'';
+  position:absolute;
+  border-style:solid;
+}
+
+.text:before{
+  bottom:100%; 
+  left:0;
+  border-width: 1rem 1rem 0 0;
+  border-color: transparent #ba2234 transparent transparent;
+}
+.text:after{
+  top:100%; 
+  right:0;
+  border-width: 1rem 3rem 0 0;
+  border-color: #ba2234 transparent transparent transparent;
+}
+
+#snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(#16092e, #7E87DE);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #061123;
+}
+
+h1,h2,p {
+  font-family: 'Mountains of Christmas', serif;
+  color: #e91e34;
+}
+
+h1,h2{
+  font-weight: 700;
+  -webkit-text-stroke: 1px white; /* width and color */
+}
+
+p {
+  font-weight: 400;
+}
+
+.b-game-card {
+  background-color:#282c34;
+  perspective: 100rem;
+}
+
+.b-game-card__cover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('src/assets/Xmas.jpg'); 
+  background-size: cover;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out;
+}
+.b-game-card__cover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+  transform: translateY(-20%);
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+.b-game-card:hover .b-game-card__cover {
+  transform: rotateX(7deg) translateY(-6px);
+  cursor: pointer;
+}
+.b-game-card.clicked .b-game-card__cover {
+  transition: transform 1.2s ease-in-out;
+  transform: rotateX(80deg) translateY(-6px);
+  cursor: pointer;
+}
+.b-game-card:hover .b-game-card__cover::after {
+  transform: translateY(0%);
+}
+
+.b-game-card:hover::before {
+  opacity: 0.6;
+  transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
+
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* styles.css */
+.b-game-card.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+
+
+
+.progress-3 {
+  width:10rem;
+  background:
+   repeating-linear-gradient(135deg,#e91e34 0 10px,#ffffff 0 20px) 0/0%   no-repeat,
+   repeating-linear-gradient(135deg,#ddd    0 10px,#eee    0 20px) 0/100%;
+  animation:loading 2s infinite;
+}
