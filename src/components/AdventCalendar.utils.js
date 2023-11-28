@@ -18,6 +18,7 @@ export const handleCardClick = (index, startDate, currentDate, clickedIndices, s
   
   export const handleWrongCardClick = (audioPath, setShake) => {
     const audioWrong = new Audio(audioPath);
+    let wrongDate = true;
     audioWrong.volume = 0.1;
     audioWrong.play();
     setShake(true);

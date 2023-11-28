@@ -13,7 +13,6 @@ const CodeHighlighter = ({ children, language }) => {
     hljs.highlightAll();
   }, [children, language]);
 
-  // Assurez-vous que children est défini avant d'appeler trim()
   const trimmedCode = children ? children.trim() : '';
 
   return (
