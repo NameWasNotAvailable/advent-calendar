@@ -145,7 +145,7 @@ p {
   z-index: 1000;
 }
 
-.b-game-card.clicked pre code {
+.b-game-card pre code {
   background: none;
 }
 
