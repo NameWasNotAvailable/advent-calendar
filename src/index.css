@@ -145,6 +145,10 @@ p {
   z-index: 1000;
 }
 
+.b-game-card.clicked pre code {
+  background: none;
+}
+
 .b-game-card.clicked .b-game-card__cover {
   opacity: 0;
   transition: opacity 1.2s, transform 1.2s ease-in-out;
