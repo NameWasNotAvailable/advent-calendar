@@ -14,7 +14,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   const currentDate = new Date();
 
   useEffect(() => {
-    playXmasAudio('src/assets/Xmas.mp3', clickedIndices);
+    playXmasAudio('/assets/Xmas.mp3', clickedIndices);
 
  // Check for Konami code (DKT)
  if (konamiCode.toLowerCase() === 'dkt') {
@@ -26,7 +26,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   setKonamiCode('');
 } else if (konamiCode.length === 3) {
   alert('You are on the right track ... ')
-  handleWrongCardClick('src/assets/wrong.mp3', setShake);
+  handleWrongCardClick('/assets/wrong.mp3', setShake);
   // Reset the Konami code state for the next attempt
   
   setKonamiCode('');
@@ -58,7 +58,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
         >
           <div
             className="b-game-card__cover vtmn-absolute vtmn-top-0 vtmn-left-0 vtmn-rounded-lg vtmn-flex vtmn-justify-center vtmn-items-center vtmn-align-center vtmn-shadow-md"
-            style={{ backgroundImage: konamiCodeActivated ? 'url("src/assets/colors.jpg")' : 'url("src/assets/Xmas.jpg")' }}
+            style={{ backgroundImage: konamiCodeActivated ? 'url("/assets/colors.jpg")' : 'url("/assets/Xmas.jpg")' }}
           >
             <p className="ribbon">
               <span className="text vtmn-text-4xl vtmn-text-white">{index + 1} December</span>

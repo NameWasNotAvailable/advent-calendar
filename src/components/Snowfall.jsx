@@ -35,7 +35,7 @@ const Snowfall = ({ konamiCodeActivated }) => {
     const moonGeometry = new THREE.CircleGeometry(1.5, 32);
 
     // Load the moon texture
-    const moonTexture = new THREE.TextureLoader().load(konamiCodeActivated ? 'src/assets/train.png' : 'src/assets/moonTexture.png');
+    const moonTexture = new THREE.TextureLoader().load(konamiCodeActivated ? '/assets/train.png' : '/assets/moonTexture.png');
     moonTexture.wrapS = THREE.RepeatWrapping;
     moonTexture.wrapT = THREE.RepeatWrapping;
 
