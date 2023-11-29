@@ -8,7 +8,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   const [konamiCode, setKonamiCode] = useState('');
   const [konamiCodeActivated, setKonamiCodeActivated] = useState(false);
 
-  const startDate = new Date('2023-11-20');
+  const startDate = new Date('2023-11-5');
   const endDate = new Date(startDate);
   endDate.setDate(startDate.getDate() + 24);
   const currentDate = new Date();
@@ -16,7 +16,6 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   useEffect(() => {
     playXmasAudio('/assets/Xmas.mp3', clickedIndices);
 
- // Check for Konami code (DKT)
  if (konamiCode.toLowerCase() === 'dkt') {
 
   setKonamiCodeActivated(true);
@@ -49,11 +48,11 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   }, []);
 
   return (
-    <div className="vtmn-grid vtmn-grid-cols-1 vtmn-gap-5 gt-small-desktop:vtmn-grid-cols-2 gt-small-desktop:vtmn-gap-7">
+    <div className="vtmn-my-3 vtmn-grid vtmn-grid-cols-1 vtmn-gap-5 gt-small-desktop:vtmn-grid-cols-2 gt-small-desktop:vtmn-gap-7">
       {days.map((day, index) => (
         <div
           key={index}
-          className={`vtmn-rounded-lg vtmn-p-1 b-game-card ${clickedIndices.includes(index) ? 'clicked' : ''}${shake ? 'shake' : ''}`}
+          className={` vtmn-max-w-2xl vtmn-rounded-lg vtmn-p-1 b-game-card ${clickedIndices.includes(index) ? 'clicked' : ''}${shake ? 'shake' : ''}`}
           onClick={() => handleCardClick(index, startDate, currentDate, clickedIndices, setClickedIndices, updateClickedIndices, () => handleWrongCardClick('src/assets/wrong.mp3', setShake))}
         >
           <div
@@ -71,8 +70,13 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
                 <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="480" height="398"  className="giphy-embed" allowFullScreen></iframe>
                 <p><a href="https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ">via GIPHY</a></p>
               </div>
-            ) : (
-              <CodeHighlighter language="javascript">{day.codeSnippet}</CodeHighlighter>
+            ) : 
+            (<div>
+              <h3 className='vtmn-px-4 vtmn-mb-3 vtmn-text-4xl'>{day.title}</h3>
+              <p className='vtmn-px-4 vtmn-text-md vtmn-text-white'>{day.description}</p>
+              <CodeHighlighter language={day.language} code={day.codeSnippet}>{day.codeSnippet}</CodeHighlighter>
+            </div>
+              
             )}
           </div>
         </div>

@@ -78,13 +78,13 @@ body {
 /* Header styles */
 h1,
 h2,
-p {
+h3{
   font-family: 'Mountains of Christmas', serif;
   color: #e91e34;
 }
 
 h1,
-h2 {
+h2,h3 {
   font-weight: 700;
   -webkit-text-stroke: 1px white; /* width and color */
 }
