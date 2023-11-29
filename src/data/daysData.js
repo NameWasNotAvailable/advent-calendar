@@ -180,7 +180,8 @@ app.use(express.json());
     language : 'xml',
     codeSnippet: `
     <!-- Use HTTPS to encrypt data in transit -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" 
+    content="upgrade-insecure-requests">
   `,
   },
   { index:16,

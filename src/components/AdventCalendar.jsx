@@ -8,7 +8,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
   const [konamiCode, setKonamiCode] = useState('');
   const [konamiCodeActivated, setKonamiCodeActivated] = useState(false);
 
-  const startDate = new Date('2023-11-5');
+  const startDate = new Date('2023-11-10');
   const endDate = new Date(startDate);
   endDate.setDate(startDate.getDate() + 24);
   const currentDate = new Date();
