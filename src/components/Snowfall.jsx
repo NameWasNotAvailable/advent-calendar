@@ -49,6 +49,12 @@ const Snowfall = ({ konamiCodeActivated }) => {
     moon.position.set(4, 5, -3); // Adjusted position
     scene.add(moon);
 
+    // Add a spotlight to simulate moonlight
+    const moonlight = new THREE.SpotLight(0xffffff, 0.5); // Adjust intensity as needed
+    moonlight.position.copy(moon.position);
+    moonlight.position.y += 5; // Adjusted position to be above the moon
+    scene.add(moonlight);
+
     // Animation parameters
     const pulseSpeed = 0.002;
     let pulseDirection = 0.2;

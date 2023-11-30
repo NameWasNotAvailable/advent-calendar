@@ -23,6 +23,8 @@
 /* Ribbon styles */
 .ribbon {
   position: relative;
+  font-family: 'Mountains of Christmas', serif;
+
 }
 
 .text {
@@ -78,7 +80,8 @@ body {
 /* Header styles */
 h1,
 h2,
-h3{
+h3,
+a{
   font-family: 'Mountains of Christmas', serif;
   color: #e91e34;
 }
@@ -105,6 +108,7 @@ p {
 }
 
 .b-game-card__cover {
+ 
   opacity: 1;
   transition: opacity 0.5s, transform 0.35s ease-in-out;
   width: 100%;
@@ -155,6 +159,25 @@ p {
   cursor: pointer;
 }
 
+.button{
+  
+  
+  width: fit-content;
+  opacity: 0;
+}
+
+.button:hover{
+ background-color: rgba(41, 134, 131,0.3)
+}
+
+.b-game-card.clicked .button{
+  position: relative;
+  z-index: 100;
+  transition: opacity 1.2s, transform 1.2s ease-in-out;
+  opacity: 1;
+
+}
+
 .b-game-card:hover .b-game-card__cover::after {
   transform: translateY(0%);
 }
@@ -179,3 +202,4 @@ p {
     repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
   animation: loading 2s infinite;
 }
+

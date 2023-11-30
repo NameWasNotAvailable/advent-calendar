@@ -3,6 +3,7 @@ const daysData = [
   { index:1,
     title : 'Semantic HTML',
   description : 'Make your website a storyteller! Use semantic HTML tags to express your content clearly to both users and search engines. Its like giving your website a friendly voice that everyone can understand! 📖🌐',
+  descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html",
   language : 'xml',
   codeSnippet: `
   <header>
@@ -18,6 +19,7 @@ const daysData = [
   {index:2,
     title : 'CSS Grid',
     description : 'Designing layouts made easy! CSS Grid is like having a magical blueprint for creating stunning structures on your website. 🏰✨',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Web/CSS/grid",
     language : 'css',
     codeSnippet: `
 
@@ -31,6 +33,7 @@ const daysData = [
   { index:3,
     title: 'Arrow Functions',
     description : 'Say goodbye to the long-winded! Arrow functions in JavaScript are like short and sweet conversations with your code. ➡️🗨️',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
     const add = (a, b) => a + b;
@@ -39,6 +42,7 @@ const daysData = [
   { index:4,
     title : 'Svelte Components',
     description : 'Craft interactive and reactive UIs with Svelte components—your creative pals for building a fantastic user experience. 🎨🚀',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
 <script>
@@ -57,6 +61,7 @@ const daysData = [
   { index:5,
     title : 'Environment Variables',
     description : 'Keep your secrets safe with environment variables! Its like having a secret handshake for sensitive information. 🤫🔐',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
     const API_KEY = process.env.API_KEY;
@@ -66,6 +71,7 @@ const daysData = [
   { index:6,
     title : 'Meta Tags for SEO',
     description : 'Help your website make a grand entrance on the internet stage! Add meta tags that describe it well—like providing the perfect introduction for a good friend. 🌟🚀',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'xml',
     codeSnippet: `
 
@@ -75,6 +81,7 @@ const daysData = [
   { index:7,
     title : 'npm Scripts',
     description : 'Manage your project tasks with ease! npm scripts are like the conductors orchestrating the symphony of your code. 🎶💻',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'json',
     codeSnippet: `
   {
@@ -89,6 +96,7 @@ const daysData = [
   { index:8,
     title : 'Array Methods (e.g., Map)',
     description : 'Let your arrays dance with joy! Use array methods for efficient and readable code—like having a party in your codebase. 🕺🎉',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
 const numbers = [1, 2, 3, 4, 5];
@@ -98,6 +106,7 @@ const doubledNumbers = numbers.map(num => num * 2);
   { index:9,
     title : 'Express Middleware',
     description : 'Enhance your Express app with middleware! Its like having trusty sidekicks ensuring everything runs smoothly. 🦸‍♂️🚀',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
 const express = require('express');
@@ -110,6 +119,7 @@ app.use(express.json());
   { index:10,
     title : 'Svelte Transitions',
     description : 'Add a touch of magic to your UI! Svelte transitions are like enchantments that make your elements come to life. ✨🎭',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `
     <script>
@@ -128,17 +138,19 @@ app.use(express.json());
   { index:11,
     title : 'Aria Roles',
     description : 'Improve accessibility by assigning roles to your elements. Its like giving each element a backstage pass to the webs inclusivity party! 🎉🌐',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'xml',
     codeSnippet: `
-    <button aria-label="Close" role="button">
-    X
-    </button>
+<button aria-label="Close" role="button">
+  X
+</button>
 
   `,
   },
   { index:12,
     title : '',
     description : '',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'xml',
     codeSnippet: `
 
@@ -147,6 +159,7 @@ app.use(express.json());
   { index:13,
     title : 'Accessible Forms',
     description : 'Design forms that are accessible and usable for all users. Its like inviting everyone to the party, regardless of their abilities! 📝',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'xml',
     codeSnippet: `
     <label for="username">Username:</label>
@@ -156,6 +169,7 @@ app.use(express.json());
   { index:14,
     title : 'CSS Variables',
     description : 'Introduce variables to your CSS for easy theming. Its like changing the mood of your website with a simple switch! 🌈🎨',
+    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'css',
     codeSnippet: `
     :root {
@@ -177,6 +191,7 @@ app.use(express.json());
   { index:15,
     title : 'Cybersecurity Best Practices',
     description : 'Ensure your websites security with best practices. Its like putting on a superhero cape to protect your digital realm! 🦸‍♂️🔒',
+    descriptionHref: "https://your-custom-link-for-description",
     language : 'xml',
     codeSnippet: `
     <!-- Use HTTPS to encrypt data in transit -->
