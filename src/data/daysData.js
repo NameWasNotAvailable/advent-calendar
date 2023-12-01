@@ -3,7 +3,7 @@ const daysData = [
   { index:1,
     title : 'Semantic HTML',
   description : 'Make your website a storyteller! Use semantic HTML tags to express your content clearly to both users and search engines. Its like giving your website a friendly voice that everyone can understand! 📖🌐',
-  descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html",
+  descriptionHref: "https://learntheweb.courses/topics/html-semantics-cheat-sheet/",
   language : 'xml',
   codeSnippet: `
   <header>
@@ -31,17 +31,17 @@ const daysData = [
 `,
   },
   { index:3,
-    title: 'Arrow Functions',
-    description : 'Say goodbye to the long-winded! Arrow functions in JavaScript are like short and sweet conversations with your code. ➡️🗨️',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
-    language : 'javascript',
+    title: 'Git --fixup',
+    description : 'Bid farewell to the verbose! Git Fixup commands are akin to concise and efficient dialogues with your commit history. 🛠️🔍 The git commit --fixup command is a powerful feature in Git that helps you organize and streamline your commit history. It is especially useful when you want to associate a new commit with a previous one, indicating that the new commit is intended to fix or improve upon the earlier commit.',
+    descriptionHref: "https://ohshitgit.com/",
+    language : 'bash',
     codeSnippet: `
-    const add = (a, b) => a + b;
+    git commit --fixup <commit-SHA>
   `,
   },
   { index:4,
     title : 'Svelte Components',
-    description : 'Craft interactive and reactive UIs with Svelte components—your creative pals for building a fantastic user experience. 🎨🚀',
+    description : 'Craft interactive and reactive UIs with Svelte components—your creative pals for building a fantastic user experience. 🎨🚀 ',
     descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
     language : 'javascript',
     codeSnippet: `

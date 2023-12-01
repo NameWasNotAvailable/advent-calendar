@@ -3,7 +3,7 @@ import hljs from 'highlight.js/lib/core';
 import { registerLanguages } from './CodeHighLighter.utils'; 
 
 
-const supportedLanguages = ['javascript', 'css', 'xml', 'json'];
+const supportedLanguages = ['javascript', 'css', 'xml', 'json', 'bash'];
 registerLanguages(supportedLanguages);
 
 const CodeHighlighter = ({ children, language }) => {
