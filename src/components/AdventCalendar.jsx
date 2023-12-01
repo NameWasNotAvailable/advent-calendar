@@ -72,21 +72,28 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
             </div>
 
             <div className="vtmn-mt-6">
-              {isCardPassed ? (
-                <React.Fragment>
-                  <h3 className='vtmn-px-4 vtmn-mb-3 vtmn-text-4xl'>{day.title}</h3>
-                  <p className='vtmn-px-4 vtmn-text-md vtmn-text-white'>{day.description}</p>
-                  <CodeHighlighter language={day.language} code={day.codeSnippet}>{day.codeSnippet}</CodeHighlighter>
-                  <div className='button vtmn-mx-4 vtmn-my-6 vtmn-py-2 vtmn-px-4 vtmn-border vtmn-text-white vtmn-uppercase vtmn-rounded-full'>
-                    <a href={day.descriptionHref} target="_blank" rel="noopener noreferrer">Learn more</a>
-                  </div>
-
-                </React.Fragment>
+            {isCardPassed ? (
+  <>
+    {konamiCodeActivated ? (
+      <div>
+        <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ"></a></p>
+      </div>
+    ) : (
+      <>
+        <h3 className='vtmn-px-4 vtmn-mb-3 vtmn-text-4xl'>{day.title}</h3>
+        <p className='vtmn-px-4 vtmn-text-md vtmn-text-white'>{day.description}</p>
+        <CodeHighlighter language={day.language} code={day.codeSnippet}>{day.codeSnippet}</CodeHighlighter>
+        <div className='button vtmn-mx-4 vtmn-my-6 vtmn-py-2 vtmn-px-4 vtmn-border vtmn-text-white vtmn-uppercase vtmn-rounded-full'>
+          <a href={day.descriptionHref} target="_blank" rel="noopener noreferrer">Learn more</a>
+        </div>
+      </>
+    )}
+  </>
               ) : (
-                <React.Fragment>
+                <>
                   <h3 className='vtmn-px-4 vtmn-mb-3 vtmn-text-4xl'>Don't Rushmas Code Quest! ⏳🚀🎄</h3>
                   <p className='vtmn-px-4 vtmn-text-md vtmn-text-white'>Couldn't resist the temptation, huh? It's hard waiting for that next dev surprise! May your sneak peeks be forgiven, and your debugging skills shine as bright as Rudolph's nose ✨🦌</p>
-                </React.Fragment>
+                </>
               )}
             </div>
           </div>
