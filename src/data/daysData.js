@@ -18,8 +18,8 @@ const daysData = [
   },
   {index:2,
     title : 'CSS Grid',
-    description : 'Designing layouts made easy! CSS Grid is like having a magical blueprint for creating stunning structures on your website. 🏰✨',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Web/CSS/grid",
+    description : 'Designing layouts made easy! CSS Grid is like having a magical blueprint for creating stunning structures on your website.   It effortlessly arranges content into rows and columns, making responsive layouts a breeze. Say goodbye to layout headaches and hello to sleek, superhero-style designs with the ultimate ally for web developers!🏰✨',
+    descriptionHref: "https://css-tricks.com/almanac/properties/g/grid-template-rows/",
     language : 'css',
     codeSnippet: `
 
@@ -31,31 +31,37 @@ const daysData = [
 `,
   },
   { index:3,
-    title: 'Git --fixup',
-    description : 'Bid farewell to the verbose! Git Fixup commands are akin to concise and efficient dialogues with your commit history. 🛠️🔍 The git commit --fixup command is a powerful feature in Git that helps you organize and streamline your commit history. It is especially useful when you want to associate a new commit with a previous one, indicating that the new commit is intended to fix or improve upon the earlier commit.',
-    descriptionHref: "https://ohshitgit.com/",
-    language : 'bash',
+    title : 'Meta Tags for SEO',
+    description : 'Help your website make a grand entrance on the internet stage! Add meta tags that describe it well—like providing the perfect introduction for a good friend. 🌟🚀 ',
+    descriptionHref: "https://developers.google.com/search/docs/crawling-indexing/special-tags",
+    language : 'xml',
     codeSnippet: `
-    git commit --fixup <commit-SHA>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Author: A.N. Author">
+    <meta name="google-site-verification" content="+nxGUDJ4Q">
+    <title>Example Books - high-quality used books</title>
+    <meta name="robots" content="noindex,nofollow">
+  </head>
+</html>
   `,
   },
-  { index:4,
-    title : 'Svelte Components',
-    description : 'Craft interactive and reactive UIs with Svelte components—your creative pals for building a fantastic user experience. 🎨🚀 ',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
-    language : 'javascript',
+  { 
+  index:4,
+    title: 'Git --fixup',
+    description : 'Bid farewell to the verbose! Git Fixup commands are akin to concise and efficient dialogues with your commit history. 🛠️🔍It is especially useful when you want to associate a new commit with a previous one, indicating that the new commit is intended to fix or improve upon the earlier commit 📝',
+    descriptionHref: "https://dev.to/maxpou/git-cheat-sheet-advanced-3a17",
+    language : 'bash',
     codeSnippet: `
-<script>
-    let count = 0;
-    $: doubled = count * 2;
-</script>
-  
-  <button on:click={() => count += 1}>
-    Click me: {count}
-  </button>
-  
-  <p>{count} doubled is {doubled}</p>
+git add .
 
+git commit --fixup HEAD~1
+# or replace HEAD~1 by the commit hash (fed14a4c)
+
+git rebase -i HEAD~3 --autosquash
+# save&quit the file (:wq in VI)
   `,
   },
   { index:5,
@@ -71,11 +77,19 @@ const daysData = [
   { index:6,
     title : 'Meta Tags for SEO',
     description : 'Help your website make a grand entrance on the internet stage! Add meta tags that describe it well—like providing the perfect introduction for a good friend. 🌟🚀',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+    descriptionHref: "https://developers.google.com/search/docs/crawling-indexing/special-tags",
     language : 'xml',
     codeSnippet: `
-
-    <meta name="description" content="Your page description">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Author: A.N. Author">
+    <meta name="google-site-verification" content="+nxGUDJ4Q">
+    <title>Example Books - high-quality used books for children</title>
+    <meta name="robots" content="noindex,nofollow">
+  </head>
+</html>
   `,
   },
   { index:7,
