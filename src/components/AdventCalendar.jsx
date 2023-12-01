@@ -75,9 +75,9 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
             {isCardPassed ? (
   <>
     {konamiCodeActivated ? (
-      <div>
-        <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ"></a></p>
-      </div>
+      <div className='gif'>
+      <iframe src="https://giphy.com/embed/Vuw9m5wXviFIQ" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ"></a></p>
+    </div>
     ) : (
       <>
         <h3 className='vtmn-px-4 vtmn-mb-3 vtmn-text-4xl'>{day.title}</h3>
