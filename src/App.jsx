@@ -31,14 +31,15 @@ function App() {
       return (
         <div>
           <Snowfall konamiCodeActivated={konamiCodeActivated} />
-          <h1 className="vtmn-my-10 vtmn-text-center vtmn-text-5xl vtmn-font-bold vtmn-uppercase gt-small-desktop:vtmn-text-7xl">Advent Calendar</h1>
-          <h2 className="vtmn-my-8 vtmn-text-center vtmn-text-4xl gt-small-desktop:vtmn-text-5xl"> Merry Devmas Decathlon!</h2>
-          <p className="vtmn-mt-8 vtmn-text-center vtmn-text-lg vtmn-text-white gt-small-desktop:vtmn-text-2xl">Discover tips & tricks every day!</p>
-          <p className="vtmn-mb-8 vtmn-text-center vtmn-text-md vtmn-text-white gt-small-desktop:vtmn-text-lg ">Oh and maybe there's a little secret ... </p>
+          <h1 className="vtmn-my-5 vtmn-text-center vtmn-text-5xl vtmn-font-bold vtmn-uppercase gt-small-desktop:vtmn-my-10 gt-small-desktop:vtmn-text-7xl">Advent Calendar</h1>
+          <h2 className="vtmn-my-3 vtmn-text-center vtmn-text-4xl gt-small-desktop:vtmn-my-8 gt-small-desktop:vtmn-text-5xl"> Merry Devmas Decathlon!</h2>
+          <p className="vtmn-mt-5 vtmn-text-center vtmn-text-lg vtmn-text-white gt-small-desktop:vtmn-mt-8 gt-small-desktop:vtmn-text-2xl">Discover tips & tricks every day!</p>
+          <p className="vtmn-mb-5 vtmn-text-center vtmn-text-md vtmn-text-white gt-small-desktop:vtmn-mb-8 gt-small-desktop:vtmn-text-lg ">Oh and maybe there's a little easter egg ... </p>
           <AdventCalendar
             days={daysData}
             onKonamiCodeActivation={handleKonamiCodeActivation}
           />
+          <p className='vtmn-mt-8 vtmn-text-center vtmn-text-white vtmn-font-bold '>V1.0.0 ❤️</p>
         </div>
       );
     }

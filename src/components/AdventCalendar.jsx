@@ -60,7 +60,7 @@ const AdventCalendar = ({ days,onKonamiCodeActivation }) => {
           <div
             key={index}
             className={` vtmn-max-w-2xl vtmn-rounded-lg vtmn-p-1 b-game-card ${clickedIndices.includes(index) ? 'clicked' : ''}${shake ? 'shake' : ''}`}
-            onClick={() => handleCardClick(index, startDate, currentDate, clickedIndices, setClickedIndices, updateClickedIndices, () => handleWrongCardClick('src/assets/wrong.mp3', setShake))}
+            onClick={() => handleCardClick(index, startDate, currentDate, clickedIndices, setClickedIndices, updateClickedIndices, () => handleWrongCardClick('/assets/wrong.mp3', setShake))}
           >
             <div
               className="b-game-card__cover vtmn-absolute vtmn-top-0 vtmn-left-0 vtmn-rounded-lg vtmn-flex vtmn-justify-center vtmn-items-center vtmn-align-center vtmn-shadow-md"

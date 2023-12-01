@@ -108,7 +108,6 @@ p {
 }
 
 .b-game-card__cover {
- 
   opacity: 1;
   transition: opacity 0.5s, transform 0.35s ease-in-out;
   width: 100%;
@@ -160,8 +159,6 @@ p {
 }
 
 .button{
-  
-  
   width: fit-content;
   opacity: 0;
 }
@@ -175,7 +172,6 @@ p {
   z-index: 100;
   transition: opacity 1.2s, transform 1.2s ease-in-out;
   opacity: 1;
-
 }
 
 .b-game-card:hover .b-game-card__cover::after {
