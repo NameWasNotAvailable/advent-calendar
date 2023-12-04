@@ -39,7 +39,7 @@ function App() {
             days={daysData}
             onKonamiCodeActivation={handleKonamiCodeActivation}
           />
-          <p className='vtmn-mt-8 vtmn-text-center vtmn-text-white vtmn-font-bold '>V1.0.0 ❤️</p>
+          <p className='vtmn-mt-8 vtmn-text-center vtmn-text-white vtmn-font-bold '>V1.0.2 ❤️</p>
         </div>
       );
     }

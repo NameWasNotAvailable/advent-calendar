@@ -1,7 +1,7 @@
 const daysData = [
 
   { index:1,
-    title : 'Semantic HTML',
+    title : 'Semantic HTML 🧱',
   description : 'Make your website a storyteller! Use semantic HTML tags to express your content clearly to both users and search engines. Its like giving your website a friendly voice that everyone can understand! 📖🌐',
   descriptionHref: "https://learntheweb.courses/topics/html-semantics-cheat-sheet/",
   language : 'xml',
@@ -17,7 +17,7 @@ const daysData = [
 `,
   },
   {index:2,
-    title : 'CSS Grid',
+    title : 'CSS Grid 📊',
     description : 'Designing layouts made easy! CSS Grid is like having a magical blueprint for creating stunning structures on your website.   It effortlessly arranges content into rows and columns, making responsive layouts a breeze. Say goodbye to layout headaches and hello to sleek, superhero-style designs with the ultimate ally for web developers!🏰✨',
     descriptionHref: "https://css-tricks.com/almanac/properties/g/grid-template-rows/",
     language : 'css',
@@ -31,7 +31,7 @@ const daysData = [
 `,
   },
   { index:3,
-    title : 'Meta Tags for SEO',
+    title : 'Meta Tags for SEO 🔍',
     description : 'Help your website make a grand entrance on the internet stage! Add meta tags that describe it well—like providing the perfect introduction for a good friend. 🌟🚀 ',
     descriptionHref: "https://developers.google.com/search/docs/crawling-indexing/special-tags",
     language : 'xml',
@@ -50,7 +50,7 @@ const daysData = [
   },
   { 
   index:4,
-    title: 'Git --fixup',
+    title: 'Git --fixup 🛠️',
     description : 'Bid farewell to the verbose! Git Fixup commands are akin to concise and efficient dialogues with your commit history. 🛠️🔍It is especially useful when you want to associate a new commit with a previous one, indicating that the new commit is intended to fix or improve upon the earlier commit 📝',
     descriptionHref: "https://dev.to/maxpou/git-cheat-sheet-advanced-3a17",
     language : 'bash',
@@ -65,46 +65,56 @@ git rebase -i HEAD~3 --autosquash
   `,
   },
   { index:5,
-    title : 'Environment Variables',
-    description : 'Keep your secrets safe with environment variables! Its like having a secret handshake for sensitive information. 🤫🔐',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+    title : 'JSDoc Magic ✨',
+    description : 'JSDoc comments are your codes friendly manual! Theyre like post-it notes for developers, offering quick insights into functions, parameters, and examples. Lets make your code a breeze to understand! 🚀📝',
+    descriptionHref: "https://devhints.io/jsdoc",
     language : 'javascript',
     codeSnippet: `
-    const API_KEY = process.env.API_KEY;
+/**
+ * @typedef product
+ * @property {string} name
+ * @property {number} quantity
+ */
+
+/**
+ * the current item in the cart
+ * @type {product}
+ * */
+export let item;
+
+//Autocompletion for item.name and item.quantity !
 
   `,
   },
   { index:6,
-    title : 'Meta Tags for SEO',
-    description : 'Help your website make a grand entrance on the internet stage! Add meta tags that describe it well—like providing the perfect introduction for a good friend. 🌟🚀',
-    descriptionHref: "https://developers.google.com/search/docs/crawling-indexing/special-tags",
-    language : 'xml',
+    title : 'Early Return Elegance ⏩',
+    description : 'Unlock the power of early returns in JavaScript functions for cleaner, more elegant code. Learn to exit swiftly, making your logic clear and concise !',
+    descriptionHref: "https://gomakethings.com/the-early-return-pattern-in-javascript/",
+    language : 'javascript',
     codeSnippet: `
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Author: A.N. Author">
-    <meta name="google-site-verification" content="+nxGUDJ4Q">
-    <title>Example Books - high-quality used books for children</title>
-    <meta name="robots" content="noindex,nofollow">
-  </head>
-</html>
+//Commun 
+function proceed_bad(data, target) {
+  if (data){
+    data.sendTo(target);
+    //extra indendation
+  }
+}
+
+//With early return
+function proceed_good(data, target) {
+  if (!data) return;
+    data.sendTo(target);
+}
+
   `,
   },
   { index:7,
-    title : 'npm Scripts',
-    description : 'Manage your project tasks with ease! npm scripts are like the conductors orchestrating the symphony of your code. 🎶💻',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+    title : 'Libraries Unveiled: The Ultimate Tier List 📚',
+    description : 'Dive into the 2022 🌐 State of JavaScript with our exclusive library tier list! Uncover the top-performing libraries, frameworks, and tools that are shaping the future of web development. Based on the latest insights, this tier list provides a roadmap for developers to navigate the ever-evolving JavaScript ecosystem. Stay ahead in the game with our comprehensive guide to the State of JavaScript Libraries! ✨💻',
+    descriptionHref: "https://2022.stateofjs.com/en-US/libraries/",
     language : 'json',
     codeSnippet: `
-  {
-  "scripts": {
-    "start": "node server.js",
-    "build": "webpack --mode production",
-    "test": "jest"
-  }
-}
+
   `,
   },
   { index:8,
