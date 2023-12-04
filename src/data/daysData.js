@@ -118,13 +118,19 @@ function proceed_good(data, target) {
   `,
   },
   { index:8,
-    title : 'Array Methods (e.g., Map)',
-    description : 'Let your arrays dance with joy! Use array methods for efficient and readable code—like having a party in your codebase. 🕺🎉',
-    descriptionHref: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+    title : 'Timezone-Aware in JS ⏰',
+    description : 'Uncover how timezones and execution contexts influence the behavior of date handling !',
+    descriptionHref: "https://devhints.io/js-date",
     language : 'javascript',
     codeSnippet: `
-const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = numbers.map(num => num * 2);
+// Client-Side Rendering (Browser)
+const clientSideDate = new Date();
+console.log(clientSideDate); // Will be the client's timezone 
+
+// Server-Side Rendering (Node.js)
+const serverSideDate = new Date();
+console.log(serverSideDate); // Will be the server's timezone
+
   `,
   },
   { index:9,
