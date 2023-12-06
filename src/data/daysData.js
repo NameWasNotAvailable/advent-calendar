@@ -153,55 +153,72 @@ console.log(serverSideDate); // Will be the server's timezone
   },
   {
     index: 9,
-    title: 'Express Middleware',
+    title: 'Jest: MockReturnValueOnce 📝',
     description:
-      'Enhance your Express app with middleware! Its like having trusty sidekicks ensuring everything runs smoothly. 🦸‍♂️🚀',
+      'Discover MockReturnValueOnce for dynamic mocks, seamlessly aligning with the Arrange-Act-Assert (AAA) pattern. Elevate your testing game effortlessly! 🚀',
     descriptionHref:
-      'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
+      'https://devhints.io/jest',
     language: 'javascript',
     codeSnippet: `
-const express = require('express');
-const app = express();
-    
-app.use(express.json());
+describe('The MockReturnValueOnce', () => {
+  it('should handle calls', () => {
+    // Arrange
+    const mockFunction = jest.fn()
+      .mockReturnValueOnce('First Call')
+      .mockReturnValueOnce('Second Call');
+    // Act
+    const result1 = mockFunction();
+    const result2 = mockFunction();
+    const result3 = mockFunction();
+    // Assert
+    expect(result1).toBe('First Call');
+    expect(result2).toBe('Second Call');
+    expect(result3).toBeUndefined(); 
+    // Additional calls return undefined
+  });
+});
     
   `,
   },
   {
     index: 10,
-    title: 'Svelte Transitions',
+    title: 'CSS Variables 🎨',
     description:
-      'Add a touch of magic to your UI! Svelte transitions are like enchantments that make your elements come to life. ✨🎭',
+      'Introduce variables to your CSS for easy theming. Its like changing the mood of your website with a simple switch! 🌈',
     descriptionHref:
       'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
-    language: 'javascript',
+    language: 'css',
     codeSnippet: `
-    <script>
-    let visible = true;
-  </script>
-  
-  {#if visible}
-    <div transition:fade>
-      This element fades in and out
-    </div>
-  {/if}
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family: 'Arial', sans-serif;
+}
 
+body {
+  background-color: var(--primary-color);
+}
 
+h1{
+  color: var(--secondary-color);
+  font-family: var(--font-family)
+}
   `,
   },
   {
     index: 11,
-    title: 'Aria Roles',
+    title: 'Git Fame Unveiled: Know Your Impact 🌟',
     description:
-      'Improve accessibility by assigning roles to your elements. Its like giving each element a backstage pass to the webs inclusivity party! 🎉🌐',
+      'Discover your Git footprint! Use these commands to reveal your commit legacy. Dive into the world of version control stardom and see where you stand among the top contributors. Git Fame awaits! 🚀',
     descriptionHref:
-      'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
-    language: 'xml',
+      'https://www.thegeekdiary.com/git-shortlog-command-examples/',
+    language: 'bash',
     codeSnippet: `
-<button aria-label="Close" role="button">
-  X
-</button>
+# Will display your number of commits
+git shortlog -sn --author="your username or email"
 
+# Now let's see the top contributions ;)
+git shortlog -sn | head -n 10
   `,
   },
   {
@@ -232,20 +249,12 @@ app.use(express.json());
     index: 14,
     title: 'CSS Variables',
     description:
-      'Introduce variables to your CSS for easy theming. Its like changing the mood of your website with a simple switch! 🌈🎨',
+      '',
     descriptionHref:
       'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
     language: 'css',
     codeSnippet: `
-    :root {
-      --primary-color: #3498db;
-      --secondary-color: #2ecc71;
-    }
     
-    body {
-      background-color: var(--primary-color);
-      color: var(--secondary-color);
-    }
     
   
 //JS: 
