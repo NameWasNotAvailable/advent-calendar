@@ -1,13 +1,18 @@
-export const handleCardClick = (index, startDate, currentDate, clickedIndices, setClickedIndices, updateClickedIndices, handleWrongCardClick) => {
-    const cardDate = new Date(startDate);
-    cardDate.setDate(startDate.getDate() + index );
-  
-    if (currentDate >= cardDate) {
+export const handleCardClick = (index, startDate, currentDate, clickedIndices, setClickedIndices, updateClickedIndices, handleWrongCardClick, e) => {
+  const cardDate = new Date(startDate);
+  cardDate.setDate(startDate.getDate() + index);
+
+  if (currentDate >= cardDate) {
+    const isButtonClick = e.target.tagName === 'BUTTON' || e.target.parentElement.tagName === 'BUTTON';
+
+    if (!isButtonClick) {
       updateClickedIndices(index, clickedIndices, setClickedIndices);
-    } else if (currentDate < cardDate) {
-      handleWrongCardClick();
     }
-  };
+  } else if (currentDate < cardDate) {
+    handleWrongCardClick();
+  }
+};
+
   
   export const updateClickedIndices = (index, clickedIndices, setClickedIndices) => {
     const updatedIndices = clickedIndices.includes(index)

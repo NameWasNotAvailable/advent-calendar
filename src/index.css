@@ -81,7 +81,8 @@ body {
 h1,
 h2,
 h3,
-a{
+a,
+.button{
   font-family: 'Mountains of Christmas', serif;
   color: #e91e34;
 }
@@ -166,6 +167,8 @@ p {
 .button:hover{
  background-color: rgba(41, 134, 131,0.3)
 }
+
+
 
 .b-game-card.clicked .button{
   position: relative;
