@@ -20,6 +20,21 @@
   }
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgba(111, 111, 111, 0.8);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: repeating-linear-gradient(135deg, #e91e34 0 10px, #ffffff 0 20px) ;
+  border-radius: 10px;
+}
+
+
 /* Ribbon styles */
 .ribbon {
   position: relative;
