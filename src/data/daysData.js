@@ -264,34 +264,27 @@ console.timeEnd('myCodeExecution');
   },
   {
     index: 14,
-    title: 'Scrollbar',
+    title: 'Customize Scrollbars ',
     description:
-      '',
+      'Discover the magic of ::-webkit-scrollbar for personalized scrollbar styles. Elevate your web design with ease! 🌟🎨',
     descriptionHref:
-      'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
+      'https://ishadeed.com/article/custom-scrollbars-css/',
     language: 'css',
     codeSnippet: `
 /* Set the width of the scroll bar*/
 ::-webkit-scrollbar{
   width: 10px;
 }
-/* Change the track to a blue color and give a round border */
+/* Change the track */
 ::-webkit-scrollbar-track{
   background-color: blue;
   border-radius: 10px;
 }
-/* Making the thumb (which shows how much you've scrolled) a gray color
-and making it round */
+/* Making the thumb */
 ::-webkit-scrollbar-thumb{
   background: gray;
   border-radius: 10px
 }
-/* A dark gray color when hovered overn */
-::-webkit-scrollbar-thumb:hover{
-  background: darkgray;
-}
-
-
   `,
   },
   {
