@@ -223,26 +223,43 @@ git shortlog -sn | head -n 10
   },
   {
     index: 12,
-    title: '',
-    description: '',
+    title: ' Object.entries and Object.fromEntries 🤝',
+    description: 'Discover a powerful duo that transforms your objects into arrays and vice versa ✨',
     descriptionHref:
-      'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
-    language: 'xml',
+      'https://dev.to/hellonehha/javascript-object-entries-vs-fromentries-50nf',
+    language: 'javascript',
     codeSnippet: `
+const obj = { a: 1, b: 2, c: 3 };
 
+const entries = Object.entries(obj);
+console.log(entries);
+//[ ['a', 1], ['b', 2], ['c', 3] ]
+
+const newObj = Object.fromEntries(entries);
+console.log(newObj);
+//{ a: 1, b: 2, c: 3 }
+    
   `,
   },
   {
     index: 13,
-    title: 'Accessible Forms',
+    title: 'Fast & Curious: console.time ⏰',
     description:
-      'Design forms that are accessible and usable for all users. Its like inviting everyone to the party, regardless of their abilities! 📝',
+      'Zoom through JavaScript efficiency with console.time! Measure execution speed, optimize code, and become a time-traveling developer. Fast, curious, and code-savvy! ⚡️🕰️',
     descriptionHref:
-      'https://developer.mozilla.org/en-US/docs/Glossary/Semantics',
-    language: 'xml',
+      'https://medium.com/@anirudh.munipalli/stop-using-console-log-in-javascript-try-these-instead-72490d895a24',
+    language: 'javascript',
     codeSnippet: `
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+// Start the timer
+console.time('myCodeExecution');
+
+// Your code snippet here
+for (let i = 0; i < 100000; i++) {
+  // Some intensive operation
+}
+
+// Stop the timer
+console.timeEnd('myCodeExecution');
   `,
   },
   {
