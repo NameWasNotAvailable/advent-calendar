@@ -289,15 +289,22 @@ console.timeEnd('myCodeExecution');
   },
   {
     index: 15,
-    title: 'Cybersecurity Best Practices',
+    title: 'Tailwind CSS Peer Magic! 🎩✨',
     description:
-      'Ensure your websites security with best practices. Its like putting on a superhero cape to protect your digital realm! 🦸‍♂️🔒',
-    descriptionHref: 'https://your-custom-link-for-description',
+      'When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element 🎯',
+    descriptionHref: 'https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state',
     language: 'xml',
     codeSnippet: `
-    <!-- Use HTTPS to encrypt data in transit -->
-    <meta http-equiv="Content-Security-Policy" 
-    content="upgrade-insecure-requests">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden m-4 w-64">
+    <div class="p-4">
+      <div class="flex items-center">
+          <span class="peer text-gray-500">Answer?</span>
+          <span class="peer-hover:bg-green-300 ml-2 p-1">1200</span>
+          <span class="peer-hover:bg-red-300 ml-2 p-1">-125</span>
+          <span class="peer-hover:bg-red-300 ml-2 p-1">12</span> 
+      </div>
+    </div>
+  </div>
   `,
   },
   {
