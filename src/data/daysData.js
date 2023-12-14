@@ -309,18 +309,19 @@ console.timeEnd('myCodeExecution');
   },
   {
     index: 16,
-    title: 'CSS Transitions',
+    title: 'Rocket-Powered Websites 🚀',
     description:
-      'Add delightful transitions to your elements. Its like giving your website a smooth choreography that captivates your users! 🕺💫',
-    language: 'css',
+      'Revolutionize your website\'s speed with a dynamic duo: rel=preconnect and dns-prefetch! Wave goodbye to sluggish loading times as these powerful tags team up to establish early connections and streamline DNS resolution. Elevate your user experience with a site that\'s as quick as it is captivating.',
+    descriptionHref: 'https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect',    
+    language: 'xml',
     codeSnippet: `
-    .element {
-      transition: background-color 0.3s ease-in-out;
-    }
-    
-    .element:hover {
-      background-color: #f0f0f0;
-    }
+
+<head>
+  <!-- ... -->
+  <link rel="preconnect" href="https://essential-api.com">
+  <link rel="dns-prefetch" href="https://your-cdn-domain.com">
+</head>
+
   `,
   },
   {
