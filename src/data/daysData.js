@@ -326,45 +326,76 @@ console.timeEnd('myCodeExecution');
   },
   {
     index: 17,
-    title: '',
-    description: '',
-    language: 'xml',
+    title: 'Mastering CSS Wizardry with :has 🧙‍♂️',
+    description: 'Discover the enchantment of CSS with :has! 🚀 Elevate your styling prowess and effortlessly target elements based on content. Dive into the magic – it\'s time to transform your designs! ✨',
+    descriptionHref: 'https://css-tricks.com/the-css-has-selector/',    
+    language: 'css',
     codeSnippet: `
+form:has(input:invalid) { 
+  /*there an invalid input*/
+  background: red; 
+}
 
+form:not(:has(input:invalid)) { 
+  /*all inputs valid*/
+  background: green 
+}
 
   `,
   },
   {
     index: 18,
-    title: '',
-    description: '',
-    language: 'xml',
+    title: 'Proxy Prestige ✨',
+    description: 'It unveils the power of Proxies, offering an enchanting way to observe and control object mutations. Watch as your code transforms into a symphony of observation! 🚀',
+    descriptionHref: 'https://melkornemesis.medium.com/javascript-proxy-objects-and-why-you-should-care-with-examples-f9773662e779',    
+    language: 'javascript',
     codeSnippet: `
+const handler = {
+  set(target, key, value) {
+    // Your custom logic goes here
+    target[key] = value;
+    return true;
+  },
+};
+
+const observedObject = new Proxy({}, handler);
 
   `,
   },
   {
     index: 19,
-    title: '',
-    description: '',
-    language: 'xml',
+    title: 'Web Workers🔧',
+    description: 'Web Workers in JavaScript enable concurrent execution of code in the background, enhancing performance by preventing resource-intensive tasks from impacting the main thread and user interface. They operate independently, offering isolation and efficient communication with the main thread via a messaging system. This feature is particularly useful for computationally heavy or network-related tasks, promoting a smoother user experience in web applications 🚀',
+    descriptionHref: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers',    
+    language: 'javascript',
     codeSnippet: `
-
+const worker = new Worker('worker.js');
+worker.postMessage('Hello from main thread!');
   `,
   },
   {
     index: 20,
-    title: '',
-    description: '',
-    language: 'xml',
+    title: 'Scroll Sorcery ✨',
+    description: 'It brings forth the magic of Intersection Observer, allowing you to conjure responsive actions as elements come into view. Experience the thrill of seamlessly orchestrated scroll events! 🚀',
+    descriptionHref: 'https://blog.webdevsimplified.com/2022-01/intersection-observer/',    
+    language: 'javascript',
     codeSnippet: `
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log('Element is in view!');
+    }
+  });
+});
 
+observer.observe(document.querySelector('.target-element'));
   `,
   },
   {
     index: 21,
     title: '',
     description: '',
+    descriptionHref: '',    
     language: 'xml',
     codeSnippet: `
 
@@ -374,6 +405,7 @@ console.timeEnd('myCodeExecution');
     index: 22,
     title: '',
     description: '',
+    descriptionHref: '',    
     language: 'xml',
     codeSnippet: `
 
@@ -383,6 +415,7 @@ console.timeEnd('myCodeExecution');
     index: 23,
     title: '',
     description: '',
+    descriptionHref: '',    
     language: 'xml',
     codeSnippet: `
 
@@ -394,7 +427,7 @@ console.timeEnd('myCodeExecution');
     index: 24,
     title: 'Merry Christmas !',
     description:
-      'Wrap up your coding adventure with a festive spirit! Thanks for joining this calendar, and be ready for the next version! 🎄🚀',
+      'Wrap up your coding adventure with a festive spirit! Thanks for joining this calendar, and be ready for the next version! 🎄🚀 -Teva',
     language: 'xml',
     codeSnippet: `
 
