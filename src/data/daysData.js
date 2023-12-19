@@ -393,12 +393,24 @@ observer.observe(document.querySelector('.target-element'));
   },
   {
     index: 21,
-    title: '',
-    description: '',
-    descriptionHref: '',    
-    language: 'xml',
+    title: 'Empowering Flexibility: Dependency Injection 🚀',
+    description: 'By adopting dependency injection, your code gains newfound adaptability, making it a symphony of modular components harmoniously working together. Embrace a paradigm shift towards cleaner, maintainable, and extensible JavaScript applications ! ',
+    descriptionHref: 'https://medium.com/geekculture/dependency-injection-in-javascript-2d2e4ad9df49',    
+    language: 'javascript',
     codeSnippet: `
-
+//without dependency injection   
+class Client { 
+  constructor() {
+  this.api = new Api();
+  }
+} 
+  
+//with dependency injection
+class AwesomeClient { 
+  constructor(api) {
+  this.api = api;
+  }
+} 
   `,
   },
   {
@@ -406,7 +418,7 @@ observer.observe(document.querySelector('.target-element'));
     title: '',
     description: '',
     descriptionHref: '',    
-    language: 'xml',
+    language: 'javascript',
     codeSnippet: `
 
   `,
