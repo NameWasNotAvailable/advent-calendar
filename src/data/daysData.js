@@ -393,7 +393,7 @@ observer.observe(document.querySelector('.target-element'));
   },
   {
     index: 21,
-    title: 'Empowering Flexibility: Dependency Injection 🚀',
+    title: 'Empowering Flexibility: Dependency Injection',
     description: 'By adopting dependency injection, your code gains newfound adaptability, making it a symphony of modular components harmoniously working together. Embrace a paradigm shift towards cleaner, maintainable, and extensible JavaScript applications ! ',
     descriptionHref: 'https://medium.com/geekculture/dependency-injection-in-javascript-2d2e4ad9df49',    
     language: 'javascript',
@@ -404,7 +404,7 @@ class Client {
   this.api = new Api();
   }
 } 
-  
+
 //with dependency injection
 class AwesomeClient { 
   constructor(api) {
@@ -415,35 +415,43 @@ class AwesomeClient {
   },
   {
     index: 22,
-    title: '',
-    description: '',
-    descriptionHref: '',    
+    title: 'Get a little bit of ES14 : toSorted() method 🛹',
+    description: 'The toSorted() method simplifies array sorting in JavaScript, providing a concise and non-destructive way to obtain a new array with elements sorted in ascending order. The original array remains unaltered, providing flexibility in managing mutable and immutable data structures !',
+    descriptionHref: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted',    
     language: 'javascript',
     codeSnippet: `
+const nums = [5, 2, 6, 3, 1, 7, 4];
+const sorted = nums.toSorted();
 
+console.log(sorted);  // [1, 2, 3, 4, 5, 6, 7]
+console.log(nums);  // [5, 2, 6, 3, 1, 7, 4]
+// Array remains unaltered !
   `,
   },
   {
     index: 23,
-    title: '',
-    description: '',
-    descriptionHref: '',    
+    title: 'My most precious extension 💎',
+    description: 'Embark on a code-hunting journey like never before! Introducing the Grepper Extension, your trusty sidekick in the vast landscape of programming. Unleash the power of instant code searches, insightful snippets, and community-driven solutions, all within the cozy confines of your favorite editor. With Grepper Gold, your coding adventures are about to reach new heights. Level up, learn more, and conquer code challenges with this must-have extension by your side. Don\'t just code—Grepp your way to greatness! 🚀💻',
+    descriptionHref: 'https://www.grepper.com/',    
     language: 'xml',
     codeSnippet: `
-
-
-
   `,
   },
   {
     index: 24,
-    title: 'Merry Christmas !',
+    title: 'Merry Christmas!🎄',
     description:
-      'Wrap up your coding adventure with a festive spirit! Thanks for joining this calendar, and be ready for the next version! 🎄🚀 -Teva',
-    language: 'xml',
-    codeSnippet: `
+      'As we wrap up this year\'s coding advent calendar, we want to express our heartfelt gratitude for your enthusiastic participation. Your curiosity and dedication have made each day of coding exploration truly special.May this Christmas bring you moments of joy, warmth, and inspiration. Thank you for being part of our coding community.Get ready for an exciting coding journey next year! We can\'t wait to share more tips, tricks, and surprises in the upcoming calendar.Wishing you a Merry Christmas and a Happy New Year filled with endless possibilities and coding adventures.🎄🚀 -Teva',
+    descriptionHref: 'https://www.youtube.com/watch?v=aAkMkVFwAoo',    
 
-  `,
+    language: 'javascript',
+    codeSnippet: `
+console.log("   *   ");
+console.log("  ***  ");
+console.log(" ***** ");
+console.log("*******");
+console.log("  | |  ");
+`,
   },
 ]
 
