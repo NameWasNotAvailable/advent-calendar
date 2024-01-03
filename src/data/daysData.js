@@ -156,8 +156,7 @@ console.log(serverSideDate); // Will be the server's timezone
     title: 'Jest: MockReturnValueOnce 📝',
     description:
       'Discover MockReturnValueOnce for dynamic mocks, seamlessly aligning with the Arrange-Act-Assert (AAA) pattern. Elevate your testing game effortlessly! 🚀',
-    descriptionHref:
-      'https://devhints.io/jest',
+    descriptionHref: 'https://devhints.io/jest',
     language: 'javascript',
     codeSnippet: `
 describe('The MockReturnValueOnce', () => {
@@ -224,7 +223,8 @@ git shortlog -sn | head -n 10
   {
     index: 12,
     title: ' Object.entries and Object.fromEntries 🤝',
-    description: 'Discover a powerful duo that transforms your objects into arrays and vice versa ✨',
+    description:
+      'Discover a powerful duo that transforms your objects into arrays and vice versa ✨',
     descriptionHref:
       'https://dev.to/hellonehha/javascript-object-entries-vs-fromentries-50nf',
     language: 'javascript',
@@ -267,8 +267,7 @@ console.timeEnd('myCodeExecution');
     title: 'Customize Scrollbars ',
     description:
       'Discover the magic of ::-webkit-scrollbar for personalized scrollbar styles. Elevate your web design with ease! 🌟🎨',
-    descriptionHref:
-      'https://ishadeed.com/article/custom-scrollbars-css/',
+    descriptionHref: 'https://ishadeed.com/article/custom-scrollbars-css/',
     language: 'css',
     codeSnippet: `
 /* Set the width of the scroll bar*/
@@ -292,7 +291,8 @@ console.timeEnd('myCodeExecution');
     title: 'Tailwind CSS Peer Magic! 🎩✨',
     description:
       'When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element 🎯',
-    descriptionHref: 'https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state',
+    descriptionHref:
+      'https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-sibling-state',
     language: 'xml',
     codeSnippet: `
     <div class="bg-white shadow-lg rounded-lg overflow-hidden m-4 w-64">
@@ -311,15 +311,15 @@ console.timeEnd('myCodeExecution');
     index: 16,
     title: 'Rocket-Powered Websites 🚀',
     description:
-      'Revolutionize your website\'s speed with a dynamic duo: rel=preconnect and dns-prefetch! Wave goodbye to sluggish loading times as these powerful tags team up to establish early connections and streamline DNS resolution. Elevate your user experience with a site that\'s as quick as it is captivating.',
-    descriptionHref: 'https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect',    
+      "Revolutionize your website's speed with the dynamic rel=preconnect! Wave goodbye to sluggish loading times as these powerful tags team up to establish early connections. Elevate your user experience with a site that's as quick as it is captivating.",
+    descriptionHref:
+      'https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect',
     language: 'xml',
     codeSnippet: `
 
 <head>
   <!-- ... -->
   <link rel="preconnect" href="https://essential-api.com">
-  <link rel="dns-prefetch" href="https://your-cdn-domain.com">
 </head>
 
   `,
@@ -327,8 +327,9 @@ console.timeEnd('myCodeExecution');
   {
     index: 17,
     title: 'Mastering CSS Wizardry with :has 🧙‍♂️',
-    description: 'Discover the enchantment of CSS with :has! 🚀 Elevate your styling prowess and effortlessly target elements based on content. Dive into the magic – it\'s time to transform your designs! ✨',
-    descriptionHref: 'https://css-tricks.com/the-css-has-selector/',    
+    description:
+      "Discover the enchantment of CSS with :has! 🚀 Elevate your styling prowess and effortlessly target elements based on content. Dive into the magic – it's time to transform your designs! ✨",
+    descriptionHref: 'https://css-tricks.com/the-css-has-selector/',
     language: 'css',
     codeSnippet: `
 form:has(input:invalid) { 
@@ -346,8 +347,10 @@ form:not(:has(input:invalid)) {
   {
     index: 18,
     title: 'Proxy Prestige ✨',
-    description: 'It unveils the power of Proxies, offering an enchanting way to observe and control object mutations. Watch as your code transforms into a symphony of observation! 🚀',
-    descriptionHref: 'https://melkornemesis.medium.com/javascript-proxy-objects-and-why-you-should-care-with-examples-f9773662e779',    
+    description:
+      'It unveils the power of Proxies, offering an enchanting way to observe and control object mutations. Watch as your code transforms into a symphony of observation! 🚀',
+    descriptionHref:
+      'https://melkornemesis.medium.com/javascript-proxy-objects-and-why-you-should-care-with-examples-f9773662e779',
     language: 'javascript',
     codeSnippet: `
 const handler = {
@@ -365,8 +368,10 @@ const observedObject = new Proxy({}, handler);
   {
     index: 19,
     title: 'Web Workers🔧',
-    description: 'Web Workers in JavaScript enable concurrent execution of code in the background, enhancing performance by preventing resource-intensive tasks from impacting the main thread and user interface. They operate independently, offering isolation and efficient communication with the main thread via a messaging system. This feature is particularly useful for computationally heavy or network-related tasks, promoting a smoother user experience in web applications 🚀',
-    descriptionHref: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers',    
+    description:
+      'Web Workers in JavaScript enable concurrent execution of code in the background, enhancing performance by preventing resource-intensive tasks from impacting the main thread and user interface. They operate independently, offering isolation and efficient communication with the main thread via a messaging system. This feature is particularly useful for computationally heavy or network-related tasks, promoting a smoother user experience in web applications 🚀',
+    descriptionHref:
+      'https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers',
     language: 'javascript',
     codeSnippet: `
 const worker = new Worker('worker.js');
@@ -376,8 +381,10 @@ worker.postMessage('Hello from main thread!');
   {
     index: 20,
     title: 'Scroll Sorcery ✨',
-    description: 'It brings forth the magic of Intersection Observer, allowing you to conjure responsive actions as elements come into view. Experience the thrill of seamlessly orchestrated scroll events! 🚀',
-    descriptionHref: 'https://blog.webdevsimplified.com/2022-01/intersection-observer/',    
+    description:
+      'It brings forth the magic of Intersection Observer, allowing you to conjure responsive actions as elements come into view. Experience the thrill of seamlessly orchestrated scroll events! 🚀',
+    descriptionHref:
+      'https://blog.webdevsimplified.com/2022-01/intersection-observer/',
     language: 'javascript',
     codeSnippet: `
 const observer = new IntersectionObserver((entries) => {
@@ -394,8 +401,10 @@ observer.observe(document.querySelector('.target-element'));
   {
     index: 21,
     title: 'Empowering Flexibility: Dependency Injection',
-    description: 'By adopting dependency injection, your code gains newfound adaptability, making it a symphony of modular components harmoniously working together. Embrace a paradigm shift towards cleaner, maintainable, and extensible JavaScript applications ! ',
-    descriptionHref: 'https://medium.com/geekculture/dependency-injection-in-javascript-2d2e4ad9df49',    
+    description:
+      'By adopting dependency injection, your code gains newfound adaptability, making it a symphony of modular components harmoniously working together. Embrace a paradigm shift towards cleaner, maintainable, and extensible JavaScript applications ! ',
+    descriptionHref:
+      'https://medium.com/geekculture/dependency-injection-in-javascript-2d2e4ad9df49',
     language: 'javascript',
     codeSnippet: `
 //without dependency injection   
@@ -416,8 +425,10 @@ class AwesomeClient {
   {
     index: 22,
     title: 'Get a little bit of ES14 : toSorted() method 🛹',
-    description: 'The toSorted() method simplifies array sorting in JavaScript, providing a concise and non-destructive way to obtain a new array with elements sorted in ascending order. The original array remains unaltered, providing flexibility in managing mutable and immutable data structures !',
-    descriptionHref: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted',    
+    description:
+      'The toSorted() method simplifies array sorting in JavaScript, providing a concise and non-destructive way to obtain a new array with elements sorted in ascending order. The original array remains unaltered, providing flexibility in managing mutable and immutable data structures !',
+    descriptionHref:
+      'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted',
     language: 'javascript',
     codeSnippet: `
 const nums = [5, 2, 6, 3, 1, 7, 4];
@@ -431,8 +442,9 @@ console.log(nums);  // [5, 2, 6, 3, 1, 7, 4]
   {
     index: 23,
     title: 'My most precious extension 💎',
-    description: 'Embark on a code-hunting journey like never before! Introducing the Grepper Extension, your trusty sidekick in the vast landscape of programming. Unleash the power of instant code searches, insightful snippets, and community-driven solutions, all within the cozy confines of your favorite editor. With Grepper Gold, your coding adventures are about to reach new heights. Level up, learn more, and conquer code challenges with this must-have extension by your side. Don\'t just code—Grepp your way to greatness! 🚀💻',
-    descriptionHref: 'https://www.grepper.com/',    
+    description:
+      "Embark on a code-hunting journey like never before! Introducing the Grepper Extension, your trusty sidekick in the vast landscape of programming. Unleash the power of instant code searches, insightful snippets, and community-driven solutions, all within the cozy confines of your favorite editor. With Grepper Gold, your coding adventures are about to reach new heights. Level up, learn more, and conquer code challenges with this must-have extension by your side. Don't just code—Grepp your way to greatness! 🚀💻",
+    descriptionHref: 'https://www.grepper.com/',
     language: 'xml',
     codeSnippet: `
   `,
@@ -441,8 +453,8 @@ console.log(nums);  // [5, 2, 6, 3, 1, 7, 4]
     index: 24,
     title: 'Merry Christmas!🎄',
     description:
-      'As we wrap up this year\'s coding advent calendar, we want to express our heartfelt gratitude for your enthusiastic participation. Your curiosity and dedication have made each day of coding exploration truly special.May this Christmas bring you moments of joy, warmth, and inspiration. Thank you for being part of our coding community.Get ready for an exciting coding journey next year! We can\'t wait to share more tips, tricks, and surprises in the upcoming calendar.Wishing you a Merry Christmas and a Happy New Year filled with endless possibilities and coding adventures.🎄🚀 -Teva',
-    descriptionHref: 'https://www.youtube.com/watch?v=aAkMkVFwAoo',    
+      "As we wrap up this year's coding advent calendar, we want to express our heartfelt gratitude for your enthusiastic participation. Your curiosity and dedication have made each day of coding exploration truly special.May this Christmas bring you moments of joy, warmth, and inspiration. Thank you for being part of our coding community.Get ready for an exciting coding journey next year! We can't wait to share more tips, tricks, and surprises in the upcoming calendar.Wishing you a Merry Christmas and a Happy New Year filled with endless possibilities and coding adventures.🎄🚀 -Teva",
+    descriptionHref: 'https://www.youtube.com/watch?v=aAkMkVFwAoo',
 
     language: 'javascript',
     codeSnippet: `
