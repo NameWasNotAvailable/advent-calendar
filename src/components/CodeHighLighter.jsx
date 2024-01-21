@@ -1,20 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import hljs from 'highlight.js/lib/core';
-import { registerLanguages } from './CodeHighLighter.utils';
+import React, { useEffect, useRef } from 'react'
+import hljs from 'highlight.js/lib/core'
+import { registerLanguages } from './CodeHighLighter.utils'
 
-const supportedLanguages = ['javascript', 'css', 'xml', 'json', 'bash'];
-registerLanguages(supportedLanguages);
+const supportedLanguages = ['javascript', 'css', 'xml', 'json', 'bash']
+registerLanguages(supportedLanguages)
 
 const CodeHighlighter = ({ children, language }) => {
-  const codeRef = useRef();
+  const codeRef = useRef()
 
   useEffect(() => {
     if (language && supportedLanguages.includes(language)) {
-      hljs.highlightBlock(codeRef.current);
+      hljs.highlightBlock(codeRef.current)
     }
-  }, [children, language]);
+  }, [children, language])
 
-  const trimmedCode = children ? children.trim() : '';
+  const trimmedCode = children ? children.trim() : ''
 
   return (
     <div className="code-highlighter">
@@ -24,7 +24,7 @@ const CodeHighlighter = ({ children, language }) => {
         </code>
       </pre>
     </div>
-  );
-};
+  )
+}
 
-export default CodeHighlighter;
+export default CodeHighlighter
